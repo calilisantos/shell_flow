@@ -8,7 +8,7 @@
     },
     "environment": {
       "type": "string",
-      "value": "hml",
+      "value": "staging",
       "description": "What is the name of the bundle you want to create?",
       "order": 1
     }
