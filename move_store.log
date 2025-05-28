@@ -1,0 +1,16 @@
+2025-05-27 19:27:03 [ERROR] Invalid environment in staging/run_04.json
+2025-05-27 19:27:14 [ERROR] Invalid environment in staging/run_04.json
+2025-05-27 19:28:41 [INFO] run_01.json processed in dev
+2025-05-27 19:29:57 [INFO] run_01.json processed in dev
+2025-05-27 19:30:22 [INFO] run_02.json processed in hml
+2025-05-27 19:30:22 [INFO] run_03.json processed in prod
+2025-05-27 19:30:22 [ERROR] Invalid environment in staging/run_04.json
+2025-05-27 19:42:15 [ERROR] Invalid environment in staging/run_04.json
+2025-05-27 19:43:47 [INFO] run_01.json processed in dev
+2025-05-27 19:43:47 [INFO] run_02.json processed in hml
+2025-05-27 19:43:47 [INFO] run_03.json processed in prod
+2025-05-27 19:43:47 [ERROR] Invalid environment in staging/run_04.json
+2025-05-27 19:44:38 [INFO] run_01.json processed in dev
+2025-05-27 19:44:38 [INFO] run_02.json processed in hml
+2025-05-27 19:44:39 [INFO] run_03.json processed in prod
+2025-05-27 19:44:39 [ERROR] Invalid environment in staging/run_04.json
