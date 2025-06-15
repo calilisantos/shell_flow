@@ -10,7 +10,6 @@ ingestion_flow() {
   file_name=$(basename "$file")
   dir_name=$(dirname "$file")
 
-
   if test "$file_env" = "$staging_env"; then # checking environment passed
     echo "$(date "+%Y-%m-%d %T") [INFO] Starting the ingestion of "$file_name" in "$staging_env""
   elif [ "$file_env" = "$dev_env" ]; then
@@ -23,12 +22,14 @@ ingestion_flow() {
     invalid_env_message="$(date "+%Y-%m-%d %T") [ERROR] Invalid environment in "$file_name""
     echo "$invalid_env_message" >> "$log_file" # creating failed log
     echo "$invalid_env_message"
-    exit 1
+    return 1
   fi
 
   if test "$dir_name" != "$file_env"; then
-    echo "$(date "+%Y-%m-%d %T") [ERROR] Invalid environment value passed in "$file_name".The staging folder must be used"
-    exit 1
+    invalid_env_value_message="$(date "+%Y-%m-%d %T") [ERROR] Invalid environment value passed in "$file_name".The staging folder must be used"
+    echo "$invalid_env_value_message" >> "$log_file" # creating failed log
+    echo "$invalid_env_value_message" 
+    return 1
   else
     echo "$(date "+%Y-%m-%d %T") [INFO] Processing "$file_name" in "$file_env""
   fi
